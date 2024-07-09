@@ -60,7 +60,7 @@ npx supabase start
     SUPABASE_URL=
     SUPABASE_KEY=
     ```
-    <i>All URLs and Keys will be available when you run Supabase.</i>
+    <i><b><u>All URLs and Keys will be available when you run Supabase.</u></b></i>
 5. Update the database by the Prisma migrations with these commands:
    
 ```bash   

@@ -42,7 +42,9 @@
 
 ### Setting up your application
 1. Clone the Repository:
+```bash
 git clone 
+```
 2. Install the libraries with this command:
 ```bash
 npm i

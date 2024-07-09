@@ -47,18 +47,18 @@ git clone
 ```bash
 npm i
 ```
-4. Install and create the docker containers with this command (make sure that you already started your docker application):
+3. Install and create the docker containers with this command (make sure that you already started your docker application):
 ```bash   
 npx supabase start
 ```
-6. Add a .env file
+4. Add a .env file
     1. Create a .env file in your root directory
     2. Add this to your .env file:
     ```bash   
     DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:54322/postgres
     SUPABASE_URL=http://127.0.0.1:54321 SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0
     ```
-2. Update the database by the Prisma migrations with these commands:
+5. Update the database by the Prisma migrations with these commands:
    
 ```bash   
 npm run prisma:migrate:reset

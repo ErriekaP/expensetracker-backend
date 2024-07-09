@@ -58,7 +58,9 @@ npx supabase start
     2. Add this to your .env file:
     ```bash   
     DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:54322/postgres
-    SUPABASE_URL=http://127.0.0.1:54321 SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0
+    SUPABASE_URL=http://127.0.0.1:54321
+
+SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0
     ```
 5. Update the database by the Prisma migrations with these commands:
    

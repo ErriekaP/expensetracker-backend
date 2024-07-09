@@ -52,7 +52,7 @@ npm i
 ```bash   
 npx supabase start
 ```
-  <i>If you get errors indicating that the container is unhealthy, run this instead:</i>
+  - <i>If you get errors indicating that the container is unhealthy, run this instead:</i>
   ```bash   
   supabase start --ignore-health-check
   ```

@@ -52,16 +52,19 @@ npm i
 ```bash   
 npx supabase start
 ```
-4. Add a .env file
+4. Get supabase credentials:
+```bash   
+npx supabase status
+```
+5. Add a .env file
     1. Create a .env file in your root directory
     2. Add this to your .env file:
     ```bash   
-    DATABASE_URL=
-    SUPABASE_URL=
-    SUPABASE_KEY=
+    DATABASE_URL = DB URL
+    SUPABASE_URL = API URL
+    SUPABASE_KEY = anon key
     ```
-    <i><b><u>All URLs and Keys will be available when you run Supabase.</u></b></i>
-5. Update the database by the Prisma migrations with these commands:
+6. Update the database by the Prisma migrations with these commands:
    
 ```bash   
 npm run prisma:migrate:reset

@@ -69,11 +69,6 @@ npx supabase status
     SUPABASE_KEY = anon key
     ```
 6. Update the database by the Prisma migrations with these commands:
-   
-```bash   
-npm run prisma:migrate:reset
-```
-
 ```bash   
 npx prisma generate
 ```

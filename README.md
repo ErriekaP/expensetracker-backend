@@ -26,37 +26,66 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+### Tools that needs to be installed:
+- Docker (https://docs.docker.com/desktop/install/windows-install/)
+- Node (https://nodejs.org/en/download)
+- VS Code (https://code.visualstudio.com/)
+  
+### Tech Stack
+- NestJS - Back-end Framework.
+- Prisma - Object Relational Mapping (ORM) Tool.
+- Supabase - Database, Storage and Authentication Provider.
+- PostgreSQL - Database Management System.
+- Docker - Containerization Tool.
+- Git/Github - Version Control.
 
+### Setting up your application
+1. Clone the Repository:
 ```bash
-$ npm install
+git clone 
+```
+2. Install the libraries with this command:
+```bash
+npm i
+```
+3. Install and create the docker containers with this command (make sure that you already started your docker application):
+```bash   
+npx supabase start
+```
+4. Add a .env file
+    1. Create a .env file in your root directory
+    2. Add this to your .env file:
+    ```bash   
+    DATABASE_URL=
+    SUPABASE_URL=
+    SUPABASE_KEY=
+    ```
+5. Update the database by the Prisma migrations with these commands:
+   
+```bash   
+npm run prisma:migrate:reset
 ```
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+```bash   
+npx prisma generate
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+### Running your application
+Run the following commands:
+1. Run the NestJS backend
+```bash   
+npm run start
 ```
+- 📌 After you finish programming, run this command to stop the docker containers:
+```bash   
+    npx supabase stop
+```
+
+2. Access Prisma Backend
+```bash   
+npx prisma studio
+```
+
 
 ## Support
 

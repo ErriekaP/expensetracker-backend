@@ -48,7 +48,7 @@ git clone https://github.com/ErriekaP/ExpenseTracker-Backend.git
 ```bash
 npm i
 ```
-3. Install and create the docker containers with this command (make sure that you already started your docker application):
+3. Install and create the docker containers with this command (make sure that you already started your docker application, this may take some time):
 ```bash   
 npx supabase start
 ```

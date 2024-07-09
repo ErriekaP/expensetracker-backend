@@ -42,7 +42,7 @@
 ### Setting up your application
 1. Clone the Repository:
 ```bash
-git clone https://github.com/ErriekaP/ExpenseTracker-Backend.git
+git clone https://github.com/ErriekaP/expensetracker-backend.git
 ```
 2. Install the libraries with this command:
 ```bash

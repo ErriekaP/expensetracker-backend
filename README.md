@@ -54,29 +54,31 @@ npx supabase start
     2. Add this to your .env file:
     ```bash   
     DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:54322/postgres
-    SUPABASE_URL=http://127.0.0.1:54321
-SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0
-```
+    SUPABASE_URL=http://127.0.0.1:54321 SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0
+    ```
 2. Update the database by the Prisma migrations with these commands:
-    ```bash   
+   
+```bash   
 npm run prisma:migrate:reset
-    ```bash   
+```
+
+```bash   
 npx prisma generate
 ```
 
 ### Running your application
 Run the following commands:
 1. Run the NestJS backend
-    ```bash   
+```bash   
 npm run start
 ```
 - 📌 After you finish programming, run this command to stop the docker containers:
-    ```bash   
+```bash   
     npx supabase stop
 ```
 
 2. Access Prisma Backend
-    ```bash   
+```bash   
 npx prisma studio
 ```
 

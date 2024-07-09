@@ -48,8 +48,10 @@ git clone
 npm i
 ```
 4. Install and create the docker containers with this command (make sure that you already started your docker application):
+```bash   
 npx supabase start
-5. Add a .env file
+```
+6. Add a .env file
     1. Create a .env file in your root directory
     2. Add this to your .env file:
     ```bash   

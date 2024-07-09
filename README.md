@@ -29,7 +29,6 @@
 ### Tools that needs to be installed:
 - Docker (https://docs.docker.com/desktop/install/windows-install/)
 - Node (https://nodejs.org/en/download)
-- NestJS CLI (https://docs.nestjs.com/cli/overview)
 - VS Code (https://code.visualstudio.com/)
   
 ### Tech Stack

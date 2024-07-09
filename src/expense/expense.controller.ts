@@ -1,17 +1,22 @@
-import { Controller, Get, Post, Body } from '@nestjs/common';
-import { ExpenseService } from './expense.service';
+import { Body, Controller, Get, Post } from '@nestjs/common';
+import { ExpensesService } from './expense.service';
+import { ExpensesDTO } from './expense.dto';
 
 @Controller('expenses')
-export class ExpenseController {
-  constructor(private readonly expenseService: ExpenseService) {}
+export class ExpensesController {
+  constructor(private readonly expensesService: ExpensesService) {}
 
   @Get()
-  findAll() {
-    return this.expenseService.findAll();
+  getExpenses() {
+    return this.expensesService.getExpenses();
+  }
+  @Get('/total')
+  getTotalExpenses() {
+    return this.expensesService.getTotalExpenses();
   }
 
   @Post()
-  create(@Body() createExpenseDto) {
-    return this.expenseService.create(createExpenseDto);
+  createExpense(@Body() data: ExpensesDTO) {
+    return this.expensesService.createExpense(data);
   }
 }

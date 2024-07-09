@@ -1,9 +1,12 @@
 import { Module } from '@nestjs/common';
-import { ExpenseController } from './expense.controller';
-import { ExpenseService } from './expense.service';
+import { ExpensesController } from './expense.controller';
+import { ExpensesService } from './expense.service';
+import { PrismaService } from 'prisma/prisma.service';
+import { SupabaseService } from '../supabase/supbabase.service';
 
 @Module({
-  controllers: [ExpenseController],
-  providers: [ExpenseService],
+  imports: [],
+  controllers: [ExpensesController],
+  providers: [ExpensesService, PrismaService, SupabaseService],
 })
 export class ExpenseModule {}
